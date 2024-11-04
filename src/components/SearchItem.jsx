@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 const SearchItem = ({ img }) => {
   return (
     <div className="flex justify-between gap-4 p-4 mb-5 border border-gray-300 rounded-md">
-      <img src={img} alt="" className="w-56 h-56 rounded" />
+      <Link to={"/hotels/1"}>
+        <img src={img} alt="" className="w-56 h-56 rounded" />
+      </Link>
       <div className="flex flex-col justify-between flex-[2] gap-2">
         <h1 className="text-lg font-semibold">Tower Street Apartments</h1>
         <span className="text-sm">500m from center</span>
